@@ -1,7 +1,7 @@
 import React from "react";
 
-const webDesigningCoursePage = () => {
-  return <div>webDesigningCoursePage</div>;
+const WebDesigningCoursePage = () => {
+  return <div>WebDesigningCoursePage</div>;
 };
 
-export default webDesigningCoursePage;
+export default WebDesigningCoursePage;

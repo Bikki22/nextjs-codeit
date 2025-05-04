@@ -1,4 +1,4 @@
-const productByIdPage = async ({ params }) => {
+const ProductByIdPage = async ({ params }) => {
   console.log(await params);
   const productId = (await params).productId;
 

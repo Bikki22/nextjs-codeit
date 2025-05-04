@@ -1,7 +1,7 @@
 import React from "react";
 
-const reactjsCourse = () => {
-  return <div>reactjsCourse</div>;
+const ReactJsCourse = () => {
+  return <div>ReactJsCourse</div>;
 };
 
-export default reactjsCourse;
+export default ReactJsCourse;

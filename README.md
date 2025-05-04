@@ -37,7 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 # E-commerce website on Next.js
 
-## Routing
+# Routing
 
 - File based routing
 - All routes must be inside src/app/ directory
@@ -46,23 +46,34 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## simple route
 
-/src/app/about/page.js
+- /src/app/about/page.js
 
 ## Nested route
 
-/src/app/courses/designing/photoshop/page.js
-/src/app/courses/designing/web-designing/page.js
+- /src/app/courses/designing/photoshop/page.js
+- /src/app/courses/designing/web-designing/page.js
 
 ## Dynamic Routes
 
-/src/app/products/[productId]/page.js
+- /src/app/products/[productId]/page.js
 
 ## Nested dynamic routes
 
-/src/app/products/[productId]/reviews/[reviewsId]/page.js
+- /src/app/products/[productId]/reviews/[reviewsId]/page.js
 
 ## catch all segments
 
-/src/app/news/[...slag]/page.js
+- /src/app/news/[...slag]/page.js
 
+## private folder
 
+- /src/app/\_components
+
+## Route group
+
+- /src/app/(auth)/....
+
+# Layouts
+- UI Components that are shared among components
+
+## Nested Layout

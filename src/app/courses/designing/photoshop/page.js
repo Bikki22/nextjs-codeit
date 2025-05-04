@@ -1,5 +1,5 @@
-const photoshopCoursePage = () => {
+const PhotoshopCoursePage = () => {
   return <div>photoshopCoursePage</div>;
 };
 
-export default photoshop;
+export default PhotoshopCoursePage;
