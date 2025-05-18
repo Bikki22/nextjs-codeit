@@ -1,4 +1,5 @@
 "use client";
+import navLinks from "@/constants/navLinks";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -24,9 +25,9 @@ function Navlink({ navLink }) {
         href={navLink.route}
         className={`${
           isActive
-            ? "text-blue-700 dark:text-blue-500"
+            ? "text-blue-700 dark:hover:text-blue-500 "
             : "text-gray-900 dark:text-white"
-        } block py-2 px-3 md:p-0 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700`}
+        } block py-2 px-3 md:p-0 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700`}
       >
         {navLink.label}
       </Link>

@@ -13,10 +13,6 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
-
-        <footer className="mt-5 bg-amber-500 text-black text-center">
-          2025. All rights reserved
-        </footer>
       </body>
     </html>
   );

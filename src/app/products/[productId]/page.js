@@ -1,12 +1,14 @@
+import BackButton from "./_components/BackButton";
+
 const ProductByIdPage = async ({ params }) => {
-  console.log(await params);
   const productId = (await params).productId;
 
   return (
     <div>
-      <h1>Product id is: {productId}</h1>
+      <BackButton />
+      <h1 className="py-5 text-3xl">Product id is: {productId}</h1>
     </div>
   );
 };
 
-export default productByIdPage;
+export default ProductByIdPage;

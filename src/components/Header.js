@@ -4,11 +4,11 @@ import Link from "next/link";
 
 import logo from "../assets/images/logo.png";
 import userImg from "../assets/images/user.jpg";
-import navLinks from "@/constants/navLinks.";
+import navLinks from "../constants/navLinks";
 import Navlink from "./Navlink";
 
 function Header() {
-  const isAuth = false;
+  const isAuth = true;
 
   return (
     <header>
@@ -54,7 +54,7 @@ function Header() {
             <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               {navLinks.map((navLink, index) =>
                 isAuth || !navLink.isAuth ? (
-                  <Navlink navLink={navLink} key={index} />
+                  <Navlink navLink={navLink} key={index} isAuth={isAuth} />
                 ) : null
               )}
             </ul>
